@@ -20,10 +20,25 @@ def serialize_device(device, now):
     }
 
 
+def positive_int_arg(name, default):
+    """Read a query param that must be an integer >= 1, or abort with a 400."""
+    try:
+        value = int(request.args.get(name, default))
+    except ValueError:
+        value = 0
+    if value < 1:
+        abort(400, description=f"'{name}' must be a positive integer")
+    return value
+
+
 def create_app(store=None, clock=None):
     app = Flask(__name__)
     store = store or DeviceStore.from_seed()
     clock = clock or (lambda: datetime.now(timezone.utc))
+
+    @app.errorhandler(400)
+    def bad_request(error):
+        return jsonify({"error": error.description}), 400
 
     @app.get("/health")
     def health():
@@ -35,11 +50,11 @@ def create_app(store=None, clock=None):
 
     @app.get("/devices")
     def list_devices():
-        page = int(request.args.get("page", 1))
-        per_page = int(request.args.get("per_page", 10))
+        page = positive_int_arg("page", 1)
+        per_page = positive_int_arg("per_page", 10)
         devices = store.devices(network_id=request.args.get("network_id"))
 
-        start = page * per_page
+        start = (page - 1) * per_page
         items = devices[start:start + per_page]
 
         now = clock()

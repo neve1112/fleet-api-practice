@@ -8,7 +8,7 @@ def device_status(last_seen, now):
     """Return one of: "online", "offline", "dormant"."""
     if last_seen is None:
         return "dormant"
-    elapsed = (now - last_seen).seconds
+    elapsed = (now - last_seen).total_seconds()
     if elapsed <= ONLINE_THRESHOLD_SECONDS:
         return "online"
     if elapsed < DORMANT_THRESHOLD_SECONDS:

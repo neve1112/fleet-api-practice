@@ -9,7 +9,7 @@ SEED_PATH = Path(__file__).parent / "data" / "seed.json"
 class DeviceStore:
     def __init__(self, networks, devices):
         self._networks = {n["id"]: n for n in networks}
-        self._devices = {d["serial"]: d for d in devices}
+        self._devices = {d["serial"].upper(): d for d in devices}
 
     @classmethod
     def from_seed(cls, path=SEED_PATH, now=None):
@@ -39,4 +39,4 @@ class DeviceStore:
         return items
 
     def get_device(self, serial):
-        return self._devices.get(serial)
+        return self._devices.get(serial.upper())
