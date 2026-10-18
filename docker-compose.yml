@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8080:5000"
+
+  tests:
+    build: .
+    command: ["pytest", "-v"]
+    profiles: ["test"]

@@ -1,0 +1,496 @@
+{
+  "networks": [
+    {
+      "id": "N_SF_OFFICE",
+      "name": "San Francisco HQ",
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "id": "N_NYC_BRANCH",
+      "name": "New York Branch",
+      "timezone": "America/New_York"
+    },
+    {
+      "id": "N_LON_STORE",
+      "name": "London Retail",
+      "timezone": "Europe/London"
+    }
+  ],
+  "devices": [
+    {
+      "serial": "Q2AC-3900-0CCE",
+      "name": "appliance-01",
+      "model": "MX68",
+      "type": "appliance",
+      "network_id": "N_SF_OFFICE",
+      "lan_ip": "10.0.0.10",
+      "last_seen_seconds_ago": 30,
+      "uplink_samples": [
+        {
+          "loss_pct": 3.37,
+          "latency_ms": 42.0
+        },
+        {
+          "loss_pct": 3.15,
+          "latency_ms": 72.0
+        },
+        {
+          "loss_pct": 3.82,
+          "latency_ms": 64.5
+        },
+        {
+          "loss_pct": 3.05,
+          "latency_ms": 39.7
+        },
+        {
+          "loss_pct": 3.35,
+          "latency_ms": 65.1
+        },
+        {
+          "loss_pct": 3.84,
+          "latency_ms": 70.8
+        },
+        {
+          "loss_pct": 4.05,
+          "latency_ms": 56.0
+        },
+        {
+          "loss_pct": 3.67,
+          "latency_ms": 48.9
+        },
+        {
+          "loss_pct": 4.3,
+          "latency_ms": 72.9
+        },
+        {
+          "loss_pct": 3.24,
+          "latency_ms": 56.1
+        },
+        {
+          "loss_pct": 3.42,
+          "latency_ms": 45.8
+        },
+        {
+          "loss_pct": 4.15,
+          "latency_ms": 40.1
+        }
+      ]
+    },
+    {
+      "serial": "Q2BD-C285-3184",
+      "name": "wireless-02",
+      "model": "MR46",
+      "type": "wireless",
+      "network_id": "N_NYC_BRANCH",
+      "lan_ip": "10.1.0.11",
+      "last_seen_seconds_ago": 45,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2AE-B7CC-B01A",
+      "name": "switch-03",
+      "model": "MS120-8",
+      "type": "switch",
+      "network_id": "N_LON_STORE",
+      "lan_ip": "10.2.0.12",
+      "last_seen_seconds_ago": 120,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2BF-876F-163F",
+      "name": "wireless-04",
+      "model": "MR36",
+      "type": "wireless",
+      "network_id": "N_SF_OFFICE",
+      "lan_ip": "10.0.0.13",
+      "last_seen_seconds_ago": 200,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2AG-EB39-3FE9",
+      "name": "camera-05",
+      "model": "MV12",
+      "type": "camera",
+      "network_id": "N_NYC_BRANCH",
+      "lan_ip": "10.1.0.14",
+      "last_seen_seconds_ago": 90,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2BH-C1CF-2858",
+      "name": "appliance-06",
+      "model": "MX68",
+      "type": "appliance",
+      "network_id": "N_LON_STORE",
+      "lan_ip": "10.2.0.15",
+      "last_seen_seconds_ago": 600,
+      "uplink_samples": [
+        {
+          "loss_pct": 4.24,
+          "latency_ms": 65.9
+        },
+        {
+          "loss_pct": 4.29,
+          "latency_ms": 63.9
+        },
+        {
+          "loss_pct": 4.06,
+          "latency_ms": 37.3
+        },
+        {
+          "loss_pct": 3.34,
+          "latency_ms": 49.5
+        },
+        {
+          "loss_pct": 3.12,
+          "latency_ms": 46.6
+        },
+        {
+          "loss_pct": 3.15,
+          "latency_ms": 48.9
+        },
+        {
+          "loss_pct": 3.95,
+          "latency_ms": 53.2
+        },
+        {
+          "loss_pct": 3.56,
+          "latency_ms": 45.5
+        },
+        {
+          "loss_pct": 3.4,
+          "latency_ms": 81.8
+        },
+        {
+          "loss_pct": 3.97,
+          "latency_ms": 65.5
+        },
+        {
+          "loss_pct": 3.26,
+          "latency_ms": 71.5
+        },
+        {
+          "loss_pct": 3.25,
+          "latency_ms": 54.0
+        }
+      ]
+    },
+    {
+      "serial": "Q2AC-7071-A608",
+      "name": "wireless-07",
+      "model": "MR46",
+      "type": "wireless",
+      "network_id": "N_SF_OFFICE",
+      "lan_ip": "10.0.0.16",
+      "last_seen_seconds_ago": 3600,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2BD-1CA3-7545",
+      "name": "switch-08",
+      "model": "MS120-8",
+      "type": "switch",
+      "network_id": "N_NYC_BRANCH",
+      "lan_ip": "10.1.0.17",
+      "last_seen_seconds_ago": 172860,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2AE-106F-A183",
+      "name": "wireless-09",
+      "model": "MR36",
+      "type": "wireless",
+      "network_id": "N_LON_STORE",
+      "lan_ip": "10.2.0.18",
+      "last_seen_seconds_ago": 777600,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2BF-CD65-8915",
+      "name": "camera-10",
+      "model": "MV12",
+      "type": "camera",
+      "network_id": "N_SF_OFFICE",
+      "lan_ip": "10.0.0.19",
+      "last_seen_seconds_ago": null,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2AG-21E3-6C05",
+      "name": "appliance-11",
+      "model": "MX68",
+      "type": "appliance",
+      "network_id": "N_NYC_BRANCH",
+      "lan_ip": "10.1.0.20",
+      "last_seen_seconds_ago": 15,
+      "uplink_samples": [
+        {
+          "loss_pct": 3.47,
+          "latency_ms": 202.8
+        },
+        {
+          "loss_pct": 3.59,
+          "latency_ms": 215.7
+        },
+        {
+          "loss_pct": 3.69,
+          "latency_ms": 183.2
+        },
+        {
+          "loss_pct": 3.37,
+          "latency_ms": 198.1
+        },
+        {
+          "loss_pct": 3.39,
+          "latency_ms": 199.2
+        },
+        {
+          "loss_pct": 4.35,
+          "latency_ms": 190.0
+        },
+        {
+          "loss_pct": 3.33,
+          "latency_ms": 219.9
+        },
+        {
+          "loss_pct": 3.76,
+          "latency_ms": 174.5
+        },
+        {
+          "loss_pct": 3.07,
+          "latency_ms": 175.5
+        },
+        {
+          "loss_pct": 3.94,
+          "latency_ms": 209.6
+        },
+        {
+          "loss_pct": 3.63,
+          "latency_ms": 173.2
+        },
+        {
+          "loss_pct": 3.57,
+          "latency_ms": 219.8
+        }
+      ]
+    },
+    {
+      "serial": "Q2BH-80B9-05E0",
+      "name": "wireless-12",
+      "model": "MR46",
+      "type": "wireless",
+      "network_id": "N_LON_STORE",
+      "lan_ip": "10.2.0.21",
+      "last_seen_seconds_ago": 299,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2AC-3AA6-889D",
+      "name": "switch-13",
+      "model": "MS120-8",
+      "type": "switch",
+      "network_id": "N_SF_OFFICE",
+      "lan_ip": "10.0.0.22",
+      "last_seen_seconds_ago": 301,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2BD-AE2B-391D",
+      "name": "wireless-14",
+      "model": "MR36",
+      "type": "wireless",
+      "network_id": "N_NYC_BRANCH",
+      "lan_ip": "10.1.0.23",
+      "last_seen_seconds_ago": 7200,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2AE-9645-DE99",
+      "name": "camera-15",
+      "model": "MV12",
+      "type": "camera",
+      "network_id": "N_LON_STORE",
+      "lan_ip": "10.2.0.24",
+      "last_seen_seconds_ago": 86430,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2BF-50FA-E84E",
+      "name": "appliance-16",
+      "model": "MX68",
+      "type": "appliance",
+      "network_id": "N_SF_OFFICE",
+      "lan_ip": "10.0.0.25",
+      "last_seen_seconds_ago": 60,
+      "uplink_samples": [
+        {
+          "loss_pct": 0.81,
+          "latency_ms": 183.2
+        },
+        {
+          "loss_pct": 0.25,
+          "latency_ms": 178.9
+        },
+        {
+          "loss_pct": 0.87,
+          "latency_ms": 213.5
+        },
+        {
+          "loss_pct": 0,
+          "latency_ms": 201.9
+        },
+        {
+          "loss_pct": 0.41,
+          "latency_ms": 177.6
+        },
+        {
+          "loss_pct": 0.64,
+          "latency_ms": 197.0
+        },
+        {
+          "loss_pct": 0.67,
+          "latency_ms": 196.5
+        },
+        {
+          "loss_pct": 0,
+          "latency_ms": 186.2
+        },
+        {
+          "loss_pct": 0,
+          "latency_ms": 216.5
+        },
+        {
+          "loss_pct": 0.82,
+          "latency_ms": 211.6
+        },
+        {
+          "loss_pct": 0,
+          "latency_ms": 172.9
+        },
+        {
+          "loss_pct": 0.82,
+          "latency_ms": 217.3
+        }
+      ]
+    },
+    {
+      "serial": "Q2AG-2BDA-F8D3",
+      "name": "wireless-17",
+      "model": "MR46",
+      "type": "wireless",
+      "network_id": "N_NYC_BRANCH",
+      "lan_ip": "10.1.0.26",
+      "last_seen_seconds_ago": 10,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2BH-236F-4063",
+      "name": "switch-18",
+      "model": "MS120-8",
+      "type": "switch",
+      "network_id": "N_LON_STORE",
+      "lan_ip": "10.2.0.27",
+      "last_seen_seconds_ago": 400,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2AC-41BC-F358",
+      "name": "wireless-19",
+      "model": "MR36",
+      "type": "wireless",
+      "network_id": "N_SF_OFFICE",
+      "lan_ip": "10.0.0.28",
+      "last_seen_seconds_ago": 259200,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2BD-548B-87B5",
+      "name": "camera-20",
+      "model": "MV12",
+      "type": "camera",
+      "network_id": "N_NYC_BRANCH",
+      "lan_ip": "10.1.0.29",
+      "last_seen_seconds_ago": 20,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2AE-D8A5-6C70",
+      "name": "appliance-21",
+      "model": "MX68",
+      "type": "appliance",
+      "network_id": "N_LON_STORE",
+      "lan_ip": "10.2.0.30",
+      "last_seen_seconds_ago": 100,
+      "uplink_samples": [
+        {
+          "loss_pct": 4.03,
+          "latency_ms": 205.6
+        },
+        {
+          "loss_pct": 3.6,
+          "latency_ms": 203.6
+        },
+        {
+          "loss_pct": 3.56,
+          "latency_ms": 215.0
+        },
+        {
+          "loss_pct": 3.68,
+          "latency_ms": 182.4
+        },
+        {
+          "loss_pct": 3.1,
+          "latency_ms": 171.1
+        },
+        {
+          "loss_pct": 3.83,
+          "latency_ms": 199.4
+        },
+        {
+          "loss_pct": 3.01,
+          "latency_ms": 205.4
+        },
+        {
+          "loss_pct": 3.09,
+          "latency_ms": 173.4
+        },
+        {
+          "loss_pct": 3.05,
+          "latency_ms": 186.5
+        },
+        {
+          "loss_pct": 3.77,
+          "latency_ms": 183.9
+        },
+        {
+          "loss_pct": 3.73,
+          "latency_ms": 197.0
+        },
+        {
+          "loss_pct": 4.09,
+          "latency_ms": 214.1
+        }
+      ]
+    },
+    {
+      "serial": "Q2BF-F201-7C6A",
+      "name": "wireless-22",
+      "model": "MR46",
+      "type": "wireless",
+      "network_id": "N_SF_OFFICE",
+      "lan_ip": "10.0.0.31",
+      "last_seen_seconds_ago": 691200,
+      "uplink_samples": []
+    },
+    {
+      "serial": "Q2AG-F229-D06A",
+      "name": "switch-23",
+      "model": "MS120-8",
+      "type": "switch",
+      "network_id": "N_NYC_BRANCH",
+      "lan_ip": "10.1.0.32",
+      "last_seen_seconds_ago": 50,
+      "uplink_samples": []
+    }
+  ]
+}
